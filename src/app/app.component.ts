@@ -45,17 +45,17 @@ export class AppComponent implements OnInit {
     }
 
     displayCameras(cameras: MediaDeviceInfo[]) {
-        console.log('Devices: ', cameras);
+        // console.log('Devices: ', cameras);
         this.availableDevices = cameras;
     }
 
     handleQrCodeResult(resultString: string) {
-        console.log('Result: ', resultString);
+        // console.log('Result: ', resultString);
         this.qrResultString = resultString;
     }
 
     onDeviceSelectChange(selectedValue: string) {
-        console.log('Selection changed: ', selectedValue);
+        // console.log('Selection changed: ', selectedValue);
         this.selectedDevice = this.scanner.getDeviceById(selectedValue);
     }
 }
